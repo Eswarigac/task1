@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url('assets/images/heros/hero-1-bg.png'); */
+    background-color: rgb(45, 104, 230);
+    font-family:'poppins',sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.nav ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+    color: gainsboro;
+}
+.nav ul #one{
+    text-decoration: underline;
+    color: white;
+    padding: 2px 0px;
+}
+.nav ul li:hover{
+color: white;
+cursor: pointer;
+}
+.nav-one{
+    display: none;
+}
+.sign-in{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    cursor: pointer;
+}
+.sign-in button{
+    padding: 8px 15px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+}
+.sign-in .login{
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: -20px;
+}
+.sign-in .sign{
+    margin-left: -20px;
+    font-size: 16px;
+    border: 0.5px solid rgb(219, 214, 214);
+    background-color: rgb(71, 121, 231);
+}
+.nav .nav-one{
+    display: none;
+}
+
+@media(min-width:1024px){
+    .nav ul li{
+        padding: 0px 20px; 
+    } 
+    .sign-in .login{
+        margin-right: 0px;
+    }
+}
+.logo .img-one{
+    display: none;
+}
+@media(max-width:1024px){
+.nav ul{
+    display: none;
+
+}
+.sign-in {
+    display: none;
+}
+.nav-one{
+    margin-right: 20%;
+}
+.nav .nav-one{
+    display: block;
+}
+.header{
+    background-color: white;
+}
+/* .logo{
+   
+    background-image: url(https://coderthemes.com/appexy/tailwind/assets/images/logo-dark.png);
+} */
+.logo .img{
+    display: none;
+}
+.logo .img-one{
+    display: block;
+}
+}
+
+.nav-one {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-one summary{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 600px;
+    margin-right: 100px;
+    padding-right: 100px;
+}
+@media(max-width:806px){
+summary i{
+margin-right:200px;
+margin-left: -100px;
+}
+}
+@media(max-width:660px){
+    summary i{
+    margin-right:400px;
+    margin-left: -250px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+}
+@media(max-width:535px){
+    summary i{
+    margin-right:400px;
+    margin-left: -350px;
+    }
+}
+@media(max-width:410px){
+    summary i{
+    margin-right:400px;
+    margin-left: -440px;
+    }
+}
+.body{
+    display: flex;
+
+}
+.content{
+    
+}
+ 
+
